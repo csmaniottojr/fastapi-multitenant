@@ -1,0 +1,4 @@
+asyncpg==0.26.0
+fastapi==0.82.0
+SQLAlchemy==1.4.40
+uvicorn==0.17.6

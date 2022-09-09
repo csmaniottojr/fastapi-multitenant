@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:13
+    ports:
+      - "7777:5432"
+    volumes:
+      - ~/pg13_volumes/eames:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=pythonsul
+      - POSTGRES_PASSWORD=pythonsul
+      - POSTGRES_DB=pythonsul
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+    networks:
+      - default
